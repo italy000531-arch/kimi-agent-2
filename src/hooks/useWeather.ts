@@ -37,10 +37,10 @@ function getWeatherType(code: number): { type: WeatherType; description: string 
 }
 
 const bgMap: Record<WeatherType, string> = {
-  sunny: '/bg-weather-sunny.jpg',
-  cloudy: '/bg-weather-cloudy.jpg',
-  rainy: '/bg-weather-rainy.jpg',
-  storm: '/bg-weather-storm.jpg',
+  sunny: 'bg-weather-sunny.jpg',
+  cloudy: 'bg-weather-cloudy.jpg',
+  rainy: 'bg-weather-rainy.jpg',
+  storm: 'bg-weather-storm.jpg',
 };
 
 export function useWeather(): WeatherData {

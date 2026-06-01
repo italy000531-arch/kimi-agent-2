@@ -9,7 +9,7 @@ export default function Header({ activeTab, onTabChange }: HeaderProps) {
       {/* Logo and Title */}
       <div className="flex items-center gap-3 mb-3">
         <img
-          src="/logo.jpg"
+          src="logo.jpg"
           alt="茱莉亞幼兒園 Logo"
           className="w-12 h-12 object-contain"
         />

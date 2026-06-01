@@ -5,7 +5,7 @@ interface HeaderProps {
 
 export default function Header({ activeTab, onTabChange }: HeaderProps) {
   return (
-    <div className="flex-shrink-0 px-4 pt-4 pb-2">
+    <div className="flex-shrink-0 px-4 pt-2 sm:pt-4 pb-2">
       {/* Logo and Title */}
       <div className="flex items-center gap-3 mb-3">
         <img

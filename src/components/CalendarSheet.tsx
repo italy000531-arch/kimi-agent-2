@@ -44,7 +44,7 @@ export default function CalendarSheet({ selectedDate, onSelectDate }: CalendarSh
   };
 
   return (
-    <div className="flex-shrink-0 z-50">
+    <div className="flex-shrink-0 z-50 pb-safe">
       {/* Handle bar - always visible */}
       <div
         className="bg-white rounded-t-2xl shadow-[0_-2px_12px_rgba(0,0,0,0.1)] cursor-pointer select-none"

@@ -71,7 +71,7 @@ export default function Home() {
     >
       <div className="absolute inset-0 bg-white/10 pointer-events-none" />
       <div
-        className="h-[100dvh] max-w-md mx-auto flex flex-col relative"
+        className="h-[100dvh] max-w-md mx-auto flex flex-col relative pt-safe pb-safe px-safe"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
@@ -89,7 +89,7 @@ export default function Home() {
         <Header activeTab={activeTab} onTabChange={setActiveTab} />
 
         {/* Content - strict single page, no scroll */}
-        <div className="flex-1 min-h-0 px-4 pt-1 pb-0 overflow-hidden">
+        <div className="flex-1 min-h-0 px-3 sm:px-4 pt-1 pb-0 overflow-hidden">
           <AnimatePresence mode="wait">
             {activeTab === 'daily' ? (
               <motion.div

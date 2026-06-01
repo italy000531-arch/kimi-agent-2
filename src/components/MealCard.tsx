@@ -32,7 +32,7 @@ export default function MealCard({ type, title, time, content, calories, lunchTy
   return (
     <div className="bg-white/85 backdrop-blur-sm rounded-2xl shadow-sm overflow-hidden">
       {/* Header */}
-      <div className={`bg-gradient-to-r ${config.gradient} px-4 py-2 flex items-center justify-between`}>
+      <div className={`bg-gradient-to-r ${config.gradient} px-3 py-1.5 sm:px-4 sm:py-2 flex items-center justify-between`}>
         <div className="flex items-center gap-2">
           <Icon className="w-4 h-4 text-white" />
           <span className="text-white text-sm font-bold">{title} {time}</span>
@@ -41,48 +41,48 @@ export default function MealCard({ type, title, time, content, calories, lunchTy
       </div>
 
       {/* Content */}
-      <div className="px-4 py-3">
+      <div className="px-3 py-2 sm:px-4 sm:py-3">
         {type === 'lunch' && lunchType === 'separate' && lunchDetail ? (
-          <div className="space-y-1.5">
+          <div className="space-y-1 sm:space-y-1.5">
             <div className="flex items-center gap-2">
               <CategoryBadge category="主食" />
-              <span className="text-base font-medium text-gray-800 flex-1">{lunchDetail.staple}</span>
-              <span className="text-xs text-gray-400">{lunchDetail.stapleCal}kcal</span>
+              <span className="text-sm sm:text-base font-medium text-gray-800 flex-1">{lunchDetail.staple}</span>
+              <span className="text-[10px] sm:text-xs text-gray-400">{lunchDetail.stapleCal}kcal</span>
             </div>
             <div className="flex items-center gap-2">
               <CategoryBadge category="主菜" />
-              <span className="text-base font-medium text-gray-800 flex-1">{lunchDetail.main}</span>
-              <span className="text-xs text-gray-400">{lunchDetail.mainCal}kcal</span>
+              <span className="text-sm sm:text-base font-medium text-gray-800 flex-1">{lunchDetail.main}</span>
+              <span className="text-[10px] sm:text-xs text-gray-400">{lunchDetail.mainCal}kcal</span>
             </div>
             <div className="flex items-center gap-2">
               <CategoryBadge category="副菜" />
-              <span className="text-base font-medium text-gray-800 flex-1">{lunchDetail.side1}</span>
-              <span className="text-xs text-gray-400">{lunchDetail.side1Cal}kcal</span>
+              <span className="text-sm sm:text-base font-medium text-gray-800 flex-1">{lunchDetail.side1}</span>
+              <span className="text-[10px] sm:text-xs text-gray-400">{lunchDetail.side1Cal}kcal</span>
             </div>
             {lunchDetail.side2 && (
               <div className="flex items-center gap-2">
                 <CategoryBadge category="副菜" />
-                <span className="text-base font-medium text-gray-800 flex-1">{lunchDetail.side2}</span>
-                <span className="text-xs text-gray-400">{lunchDetail.side2Cal}kcal</span>
+                <span className="text-sm sm:text-base font-medium text-gray-800 flex-1">{lunchDetail.side2}</span>
+                <span className="text-[10px] sm:text-xs text-gray-400">{lunchDetail.side2Cal}kcal</span>
               </div>
             )}
             <div className="flex items-center gap-2">
               <CategoryBadge category="湯品" />
-              <span className="text-base font-medium text-gray-800 flex-1">{lunchDetail.soup}</span>
-              <span className="text-xs text-gray-400">{lunchDetail.soupCal}kcal</span>
+              <span className="text-sm sm:text-base font-medium text-gray-800 flex-1">{lunchDetail.soup}</span>
+              <span className="text-[10px] sm:text-xs text-gray-400">{lunchDetail.soupCal}kcal</span>
             </div>
             <div className="flex items-center gap-2">
               <CategoryBadge category="水果" />
-              <span className="text-base font-medium text-gray-800 flex-1">{lunchDetail.fruit}</span>
-              <span className="text-xs text-gray-400">{lunchDetail.fruitCal}kcal</span>
+              <span className="text-sm sm:text-base font-medium text-gray-800 flex-1">{lunchDetail.fruit}</span>
+              <span className="text-[10px] sm:text-xs text-gray-400">{lunchDetail.fruitCal}kcal</span>
             </div>
           </div>
         ) : type === 'lunch' && lunchType === 'combined' && lunchCombined ? (
-          <div className="space-y-1.5">
-            <p className="text-base font-medium text-gray-800 leading-relaxed">{lunchCombined}</p>
+          <div className="space-y-1 sm:space-y-1.5">
+            <p className="text-sm sm:text-base font-medium text-gray-800 leading-relaxed">{lunchCombined}</p>
           </div>
         ) : (
-          <p className="text-base font-medium text-gray-800">{content}</p>
+          <p className="text-sm sm:text-base font-medium text-gray-800">{content}</p>
         )}
       </div>
     </div>

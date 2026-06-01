@@ -10,7 +10,7 @@ interface DateSelectorProps {
 
 export default function DateSelector({ date, weekday, onPrev, onNext }: DateSelectorProps) {
   return (
-    <div className="flex-shrink-0 flex items-center justify-center py-2">
+    <div className="flex-shrink-0 flex items-center justify-center py-1 sm:py-2">
       <button
         onClick={onPrev}
         className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm active:scale-95 transition-transform"
